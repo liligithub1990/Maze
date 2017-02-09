@@ -1,0 +1,25 @@
+*{padding:0;margin:0;}
+a{text-decoration: none;}
+ul li{list-style: none; }
+.clearfix{zoom:1;}
+.clearfix:after,.clearfix:before{content: "";display: table;}
+.clearfix:after{clear: both;}
+ body{  
+	font-size:9pt;  
+}  
+#bg_img{position:relative;z-index:2;}
+.game_box{width:640px;height:480px;margin:0;padding:0;position:relative;overflow:hidden;background:url(http://js.xcar.com.cn/liyan_game/maze_up/images/game_bg.jpg) left top no-repeat;}
+.gamebox{position:relative;width:440px;height:440px;margin-top:20px;margin-left:35px;border:1px solid #000;background:#fff;}
+.lifebox{position:absolute;right:40px;top:95px;width:48px;}
+.lifebox .havelife{background:url(http://js.xcar.com.cn/liyan_game/maze_up/images/life.png) left top no-repeat;}
+.lifebox .nolife{background:url(http://js.xcar.com.cn/liyan_game/maze_up/images/nolife.png) left top no-repeat;}
+.lifebox div{width:48px;height:48px;margin-bottom:12px;}
+.game_btn_start{left:40%;top:54%;}
+.filled{  
+	background-color:blue;  
+}
+.pictop{padding-top:20px;position:absolute;right:20px;bottom:50px;}
+.pictop em,.pictop p{font:bold 18px/100px "Î¢ÈíÑÅºÚ";color:#FF6F00;vertical-align:middle;}
+.pictop span{padding:0 10px;color:#fff;}
+.maze_inner { position:relative; }
+.maze_cell { position:absolute; width:33px; height:33px; overflow:hidden; border:1px solid black;}

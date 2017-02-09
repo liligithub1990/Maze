@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>开车寻标</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE"/>
+<link href="http://js.xcar.com.cn/ad/ad/fd/css/game_puzzle.css" rel="stylesheet">
+<!--[if IE 6]>
+<script type="text/javascript" src="http://js.xcar.com.cn/ad/ad/fd/js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript" src="http://js.xcar.com.cn/ad/ad/fd/js/ie6Fixpng.js"></script>
+<![endif]-->
+<link href="http://js.xcar.com.cn/liyan_game/maze_up/css/mazeflag.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="game_wrap">
+	<div class="game_ctrl_title">操作指南</div>
+    <div class="game_ctrl_detail">MusicXX 游戏操作十分简单，使用键盘上"S、D、F、J、K、L、空格键"以及鼠标左键，即可完成游戏全部操作。键盘操作（适用于音乐弹奏）键盘上"S、D、F、J、K、L、空格键"与音符相对应，来演奏音乐。
+	</div>
+    <div class="game_main">
+    	<div class="game_view">
+        	<!-- 所有用到的弹窗 -->
+        	<div class="game_pops">
+            	<!-- 开始按钮 -->
+            	<div class="game_btn_start" id="gameStart" style="display:block;"></div>
+                <!-- 成功 弹窗 -->
+                <div class="game_pop_winner" id="gamePopWinner" style="display:none;">
+                	<!-- 弹窗关闭按钮 -->
+                    <a href="#" class="game_pop_close" id="gamePopClose1"></a>
+                    <div class="game_pop_info">
+                        <!-- 弹窗按钮 -->
+                        <div class="game_pop_btns"><a href="#" class="game_btn" id="gameReplay1">再玩一次</a></div>
+                    </div>
+                </div>
+                <!-- 失败 弹窗 -->
+                <div class="game_pop_loser" style="display:none;" id="gamePopLoser">
+                	<!-- 弹窗关闭按钮 -->
+                    <a href="#" class="game_pop_close" id="gamePopClose2"></a>
+                    <div class="game_pop_info">
+                        <!-- 弹窗按钮 -->
+                        <div class="game_pop_btns"><a href="#" class="game_btn" id="gameReplay2">再玩一次</a></div>
+                    </div>
+                </div>
+                <!-- 倒计时弹窗 -->
+            	<div class="game_num_desc game_num_3"  style="display:none;" id="gameLoad"><i></i></div>
+        		<!-- 黑色遮罩 -->
+            	<div class="game_mask" style="background:#000;filter: alpha(opacity=60);opacity:0.6;" id="gameMask"></div>
+            </div>
+            <!-- 游戏面板 -->
+			
+			<div class="game_box" style="" id="game_box">
+				<div class="pictop">
+					<p class="coinicon">得分:<span id="flagnum">0</span></p>
+				</div>
+				<div id="lifebox" class="lifebox">
+					<div class="havelife"></div>
+					<div class="havelife"></div>
+					<div class="havelife"></div>
+					<div class="havelife"></div>
+				</div>
+				<div class="gamebox" id="main"></div>
+			</div>
+            <!-- 游戏状态 -->
+            <div class="game_status">倒计时：<span class="game_time"  id="gameTime" style="width:auto;">30</span>s</div>
+        </div>
+        <div class="game_side">
+        	<div class="game_summary">
+            	<div class="game_side_title"><span>游戏简介</span></div>
+                <div class="game_side_info">1.游戏采用计时方式，点击开始按钮开始游戏；<br>
+                  2.通过键盘<span style="color:red;">上、下、左、右</span>按键控制右侧黄色车的移动，在吃到旗子的同时躲避灰色敌方车<br>
+3.游戏结束计算吃到旗子的数量</div>
+            </div>
+            <div class="game_preview">
+            	<div class="game_side_title"><span>示例</span></div>
+                <div class="game_side_preview"><img src="http://js.xcar.com.cn/liyan_game/maze_up/images/maze_gk.jpg" width="277" height="208"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="http://js.xcar.com.cn/liyan_game/maze_up/js/mazeflag.js"></script>
+<script src="http://js.xcar.com.cn/liyan_game/maze_up/js/maze_main.js"></script>
+
+<!--[if IE 6]>
+<script type="text/javascript" src="http://js.xcar.com.cn/ad/ad/fd/js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript" src="http://js.xcar.com.cn/ad/ad/fd/js/ie6Fixpng.js"></script>
+<![endif]-->
+</body>
+</html>
